@@ -1,0 +1,108 @@
+/*My site is styled in mobilefirst*/
+
+body {
+    background-color: #FFF8E8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+header.hero {
+    background-image: url("https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDF8fHxlbnwwfHx8fHw%3D");
+    height: 30vh;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+header.hero h1 {
+    color: #FFF8E8;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.text-area,
+.text-section {
+    display: flex;
+    background-color: #F7EED3;
+    color: #674636;
+    text-transform: uppercase;
+}
+
+.text-area h2,
+.text-section p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.box {
+    background-color: #F7EED3;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+h3,
+label,
+legend {
+    font-size: 15px;
+    font-weight: bold;
+    color: #674636;
+    text-transform: uppercase;
+}
+
+input,
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #674636;
+    padding: 10px;
+    background-color: #FFF8E8;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    border: 3px solid #674636;
+}
+
+button:hover {
+    background-color: #F7EED3;
+}
+
+
+@media(min-width: 445px) and (max-width: 667px) {
+    header.hero {
+        height: 60vh;
+        width: 60%;
+    }
+}
+
+@media(min-width: 668px) {
+    header.hero {
+        background-size: contain;
+        height: 70vh;
+        margin-bottom: 0;
+    }
+
+    .text-area {
+        margin-top: 0;
+    }
+}

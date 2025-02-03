@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Pro Tennis Training Club</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="hero" role="banner" aria-label="Pro Tennis Training Club">
+            <h1>Pro Tennis Training Club</h1>
+        </header>
+
+
+        <main>
+            <section class="text-area" aria-labelledby="headline">
+                <h2 id="headline">Improve your game with personalized tennis lessons</h2>
+            </section>
+
+            <section class="text-section" aria-labelledby="details">
+                <p id="details">Whether you are a beginner or looking to refine your skills, our coaches are here to
+                    help you!
+                </p>
+            </section>
+
+
+            <section class="box" aria-labelledby="signup-form">
+                <h3 id="signup-form">Sign up here</h3>
+                <form action="http://httpbin.org/anything" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="First and Lastname" required>
+                    <br><br>
+
+
+                    <label for="email-input">Email:</label>
+                    <input type="email" id="email-input" name="email" placeholder="JohnDoe@hotmail.com" required>
+                    <br><br>
+
+
+                    <fieldset>
+                        <legend>How would you like to be contacted?</legend>
+                        <input type="radio" id="phone" name="contact-method" value="phone">
+                        <label for="phone">Phone</label>
+                        <input type="radio" id="email-contact" name="contact-method" value="email">
+                        <label for="email-contact">E-mail</label>
+                    </fieldset>
+                    <br>
+
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to terms and conditions</label>
+                    <br><br>
+
+                    <button type="submit" aria-label="Submit Form">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
